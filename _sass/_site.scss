@@ -64,7 +64,11 @@ body {
               transition: all .2s ease;
       margin-right: .3rem;
 
-      &:hover,
+      &:hover {
+        color: $oc-gray-7;
+        text-decoration: none;
+      }
+      
       &:focus {
         color: $oc-gray-7;
         text-decoration: none;
@@ -83,7 +87,11 @@ body {
   a {
     color: $base-color;
 
-    &:hover,
+    &:hover {
+      color: $oc-gray-7;
+      text-decoration: none;
+    }
+    
     &:focus {
       text-decoration: none;
     }
