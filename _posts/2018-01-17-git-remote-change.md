@@ -7,6 +7,7 @@ tags: [mac, git, github, configuration]
 comments: true
 share: true
 ---
+test
 ### 1. git remote change
 ```
 $ cd ~/bgs/data/node-project/cli-prototype
