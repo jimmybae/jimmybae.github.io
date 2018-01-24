@@ -3,10 +3,10 @@ layout: post
 title: "git remote change"
 description: "git remote change & config"
 date: 2018-01-17
+categories: Develop
 tags: [mac, git, github, configuration]
 comments: true
 share: true
-categories: Develop
 ---
 ### 1. git remote change
 ```
