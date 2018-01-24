@@ -3,7 +3,7 @@ layout: post
 title: "아이폰테스트"
 description: "아이폰테스트 입니다."
 date: 2017-09-06
-categories: Sample
+categories: SAMPLE
 tags: [샘플 포스트, 테스트]
 comments: true
 share: true
