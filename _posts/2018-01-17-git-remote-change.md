@@ -6,6 +6,7 @@ date: 2018-01-17
 tags: [mac, git, github, configuration]
 comments: true
 share: true
+category: Develop
 ---
 ### 1. git remote change
 ```
