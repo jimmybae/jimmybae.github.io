@@ -9,9 +9,11 @@ layout: default
 <div class="post">
   <div class="post-title">
     {{ page.title }}
-    <span class="archive-list-post-date">
+    <!-- jimmy { -->
+    <span class="post-categories">
       {{ page.categories }}
     </span>
+    <!-- } jimmy -->
   </div>
   <span class="post-date">
     <time>{{ page.date | date_to_string }}</time>

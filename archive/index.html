@@ -7,11 +7,13 @@ title: Archive
   {% if site.posts.size == 0 %}
     <h2>No post found</h2>
   {% else %}
+    <!-- jimmy { -->
     {% for category in site.categories %}
       {% capture cat %}{{ category | first }}{% endcapture %}
-    <div class="tag-title" id="{{cat}}">
+    <div class="archive-categories" id="{{cat}}">
       {{ cat | capitalize }}
     </div>
+    <!-- } jimmy -->
       {% for post in site.categories[cat] %}
     <div class="archive-list-post">
         {% if post.link %}
@@ -27,7 +29,9 @@ title: Archive
         </span>
       </a>
     </div>
+      <!-- jimmy { -->
       {% endfor %}
+      <!-- } jimmy -->
     {% endfor %}
   {% endif %}
   </div>
