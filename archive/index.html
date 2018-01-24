@@ -11,7 +11,7 @@ title: Archive
     {% for category in site.categories %}
       {% capture cat %}{{ category }}{% endcapture %}
     <div class="archive-categories" id="{{cat}}">
-      {{ cat | capitalize }}
+      {{ cat }}
     </div>
     <!-- } jimmy -->
       {% for post in site.categories[cat] %}
