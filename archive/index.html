@@ -9,7 +9,7 @@ title: Archive
   {% else %}
   {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  <h3 id="{{cat}}">{{ cat | capitalize }}</h3>
   {% for post in site.categories[cat] %}
     <div class="archive-list-post">
       {% if post.link %}
