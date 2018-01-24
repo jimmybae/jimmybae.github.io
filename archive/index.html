@@ -9,11 +9,12 @@ title: Archive
   {% else %}
     <!-- jimmy { -->
     {% for category in site.categories %}
+      {% capture cat %}{{ category }}{% endcapture %}
     <div class="archive-categories" id="{{cat}}">
-      {{ category }}
+      {{ cat | capitalize }}
     </div>
     <!-- } jimmy -->
-      {% for post in site.categories[category] %}
+      {% for post in site.categories[cat] %}
     <div class="archive-list-post">
         {% if post.link %}
       <a href="{{ post.link }}">
