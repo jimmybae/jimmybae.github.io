@@ -7,7 +7,10 @@ title: Archive
   {% if site.posts.size == 0 %}
     <h2>No post found</h2>
   {% else %}
-  {% for post in site.posts %}
+  {% for category in site.categories %}
+  {% capture cat %}{{ category | first }}{% endcapture %}
+  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  {% for post in site.categories[cat] %}
     <div class="archive-list-post">
       {% if post.link %}
       <a href="{{ post.link }}">
@@ -22,6 +25,7 @@ title: Archive
         </span>
       </a>
     </div>
+  {% endfor %}
   {% endfor %}
   {% endif %}
   </div>
