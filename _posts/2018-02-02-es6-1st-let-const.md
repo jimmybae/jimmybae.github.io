@@ -36,13 +36,13 @@ console.log(abc); // 123
 console.log(def); // ReferenceError: def is not defined
 ```
 
-2. 중복 선언
+2. 중복 선언 X  
 ```js
 var abc = 123;
 var abc = 456;
 
 let def = 123;
-let def = 456; // SyntaxError: Identifier 'def' has already been declared
+let def = 456; // SyntaxError: Identifier def has already been declared
 ```
 
 3. Variable Hoisting
@@ -98,7 +98,7 @@ for (let i = 0; i < str.length; i++) {
 ```
 
 ### const
-1. declaration, initialization
+1. declaration, initialization  
 ```js
 const abc = 123;
 abc = 456; // TypeError: Assignment to constant variable.
