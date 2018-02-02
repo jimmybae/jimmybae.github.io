@@ -36,7 +36,7 @@ console.log(abc); // 123
 console.log(def); // ReferenceError: def is not defined
 ```
 
-2. 중복 선언 X
+2. 중복 선언
 ```js
 var abc = 123;
 var abc = 456;
